@@ -1,0 +1,5 @@
+node index.js
+
+or 
+
+node --watch index.js
