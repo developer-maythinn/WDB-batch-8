@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .normal, .box{
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            margin: 10px;
+        }
+        .box{
+            /* padding: 50px; */
+            box-sizing: border-box;
+            /* border: 10px solid red; */
+        }
+        .normal{
+            box-shadow: 10px 15px 30px red;
+
+        }
+        h1{
+            text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.693);
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <div class="normal">Normal</div>
+    <!-- <div class="box">Box</div>
+    <div class="normal">Normal</div> -->
+</body>
+</html>
