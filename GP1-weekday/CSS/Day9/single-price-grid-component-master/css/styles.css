@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  background-color: hsl(204, 43%, 93%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 550px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: fit-content 200px;
+  grid-template-areas: "join join" "sub why";
+}
+.container .card .join {
+  grid-area: join;
+  padding: 2rem;
+}
+.container .card .subscription {
+  padding: 2rem;
+  grid-area: sub;
+  background-color: hsl(179, 62%, 43%);
+}
+.container .card .why {
+  padding: 2rem;
+  grid-area: why;
+  background-color: hsla(179, 62%, 43%, 0.5);
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 2rem;
+  }
+  .container .card {
+    grid-template-columns: 1fr;
+    grid-template-areas: "join" "sub" "why";
+  }
+}/*# sourceMappingURL=styles.css.map */

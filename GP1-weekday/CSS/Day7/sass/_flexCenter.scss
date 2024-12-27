@@ -1,0 +1,9 @@
+@mixin flexCenter($bgColor, $height){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $whiteColor;
+    font-size: 2rem;
+    background-color: $bgColor;
+    height: $height;
+}

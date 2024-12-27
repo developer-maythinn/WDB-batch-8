@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+$Cyan: hsl(179, 62%, 43%);
+$Bright-Yellow: hsl(71, 73%, 54%);
+$Light-Gray: hsl(204, 43%, 93%);
+$Grayish-Blue: hsl(218, 22%, 67%);
+$White: #fff;
+$Cyan-opacity: hsla(179, 62%, 43%, 0.5);
+
+*{
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    background-color: $Light-Gray;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 550px;
+        background-color: $White;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: fit-content 200px;
+        grid-template-areas: 
+        "join join"
+        "sub why";
+        .join{
+            grid-area: join;
+            padding: 2rem;
+            h3{
+
+            }
+            h5{
+
+            }
+            p{
+
+            }
+        }
+        .subscription{
+            padding: 2rem;
+            grid-area: sub;
+            background-color: $Cyan;
+            h5{
+
+            }
+            .price{
+                h1{
+
+                }
+                span{
+
+                }
+
+            }
+            p{
+
+            }
+            a{
+
+            }
+        }
+        .why{
+            padding: 2rem;
+            grid-area: why;
+            background-color: $Cyan-opacity;
+            h4{
+
+
+            }
+            p{
+
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .container{
+        padding: 2rem;
+        .card{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+        "join"
+        "sub"
+        "why";
+        }
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 992px){
+// tablet
+}
+
+@media (min-width: 992px) {
+    // desktop
+}

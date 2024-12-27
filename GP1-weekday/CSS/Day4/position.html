@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         *{
             padding: 0;
             margin: 0;
@@ -41,15 +44,37 @@
             font-size: 1.5rem;
             margin-bottom: 3px;
         }
+        .para{
+            background-color: greenyellow;
+            height: 1200px;
+        }
+        button{
+            position: fixed;
+            right: 3rem;
+            bottom: 3rem;
+        }
+        .heading{
+            padding: 20px;
+            background-color: chocolate;
+            color: #fff;
+            position: sticky;
+            top: 0;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
+    <div class="card" id="custom-card">
         <img src="https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img">
         <div class="content">
             <h1>Heading 1</h1>
             <p>This is p</p>
         </div>
     </div>
+    <h1 class="heading">Heading 1</h1>
+    <a href="#custom-card">
+        <button>Go To Top</button>
+    </a>
+ 
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dignissimos nemo dolorem natus laudantium soluta neque provident sint eveniet, assumenda perferendis illo fugiat odit? Facere quam quidem distinctio. Voluptatem, vitae!</p>
 </body>
 </html>

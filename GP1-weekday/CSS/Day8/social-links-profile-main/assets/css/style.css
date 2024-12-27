@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "inter";
+  src: url("../fonts/Inter.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .card {
+  max-width: 350px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: hsl(0, 0%, 12%);
+  padding: 1.6rem;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  border-radius: 8px;
+}
+body .card img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+body .card h1 {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+body .card h4 {
+  color: hsl(75, 94%, 57%);
+  font-size: 13px;
+  margin-top: 0.3rem;
+}
+body .card p {
+  font-size: 14px;
+  margin: 1.4rem 0;
+}
+body .card .btn-gp a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  width: 100%;
+  background-color: hsl(0, 0%, 20%);
+  display: block;
+  font-size: 14px;
+  padding: 0.6rem;
+  margin: 0.7rem 0;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-weight: 600;
+}
+body .card .btn-gp a:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}/*# sourceMappingURL=style.css.map */

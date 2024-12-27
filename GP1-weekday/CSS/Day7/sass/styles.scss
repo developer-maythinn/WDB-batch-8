@@ -1,0 +1,33 @@
+@import "./variables";
+@import "./buttonStyles";
+@import "./flexCenter";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.card-container{
+    .card{
+        h1{
+            @extend .btnStyles;
+        }
+        p{
+            @extend .btnStyles;
+        }
+        button{
+          @extend .btnStyles;
+        }
+    }
+}
+
+.container-1{
+    @include flexCenter(green, 50vh);
+}
+.container-2{
+    @include flexCenter(blue, 30vh);
+    
+}
+.container-3{
+   @include flexCenter(orange, 100vh);
+}

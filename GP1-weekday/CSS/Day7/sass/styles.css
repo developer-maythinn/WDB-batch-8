@@ -1,0 +1,42 @@
+.btnStyles, .card-container .card button, .card-container .card p, .card-container .card h1 {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: rgb(255, 0, 136);
+  color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  background-color: green;
+  height: 50vh;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  background-color: blue;
+  height: 30vh;
+}
+
+.container-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  background-color: orange;
+  height: 100vh;
+}/*# sourceMappingURL=styles.css.map */

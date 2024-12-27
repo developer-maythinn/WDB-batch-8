@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "inter";
+    src: url("../fonts/Inter.ttf");
+}
+
+$Green: hsl(75, 94%, 57%);
+$White: hsl(0, 0%, 100%);
+$Grey-700: hsl(0, 0%, 20%);
+$Grey-800: hsl(0, 0%, 12%);
+$Grey-900: hsl(0, 0%, 8%);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+body{
+    background-color: $Grey-900;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        max-width: 350px;
+        height: fit-content;
+        background-color: $Grey-800;
+        padding: 1.6rem;
+        color: $White;
+        text-align: center;
+        border-radius: 8px;
+        img{
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        h1{
+            font-size: 1.3rem;
+            margin-top: 1rem;
+        }
+        h4{
+            color: $Green;
+            font-size: 13px;
+            margin-top: 0.3rem;
+        }
+        p{
+            font-size: 14px;
+            margin: 1.4rem 0;
+        }
+        .btn-gp{
+            a{
+                color: $White;
+                text-decoration: none;
+                width: 100%;
+                background-color: $Grey-700;
+                display: block;
+                font-size: 14px;
+                padding: 0.6rem;
+                margin: 0.7rem 0;
+                border-radius: 5px;
+                transition: 0.5s;
+                font-weight: 600;
+                &:hover{
+                    background-color: $Green;
+                    color: $Grey-900;
+                }
+            }
+        }
+    }
+}
