@@ -19,6 +19,9 @@ $Cyan-opacity: hsla(179, 62%, 43%, 0.5);
 }
 
 .container{
+    i{
+        font-size: 4rem;
+    }
     background-color: $Light-Gray;
     width: 100%;
     min-height: 100vh;

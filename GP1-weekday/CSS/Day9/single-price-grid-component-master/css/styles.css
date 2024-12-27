@@ -17,6 +17,9 @@
   justify-content: center;
   align-items: center;
 }
+.container i {
+  font-size: 4rem;
+}
 .container .card {
   border-radius: 10px;
   overflow: hidden;
