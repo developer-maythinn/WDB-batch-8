@@ -10,12 +10,16 @@ import ClickEvent from './components/Events/ClickEvent';
 import SimpleUseState from './components/Hooks/UseState/SimpleUseState';
 import InputWithUseState from './components/Hooks/UseState/InputWithUseState';
 import SelectedImage from './components/Hooks/UseState/SelectedImage';
+import InputFormUseState from './components/Hooks/UseState/InputFormUseState';
+import CRUD from './components/Hooks/UseState/CRUD';
 
 function App() {
 
   return (
     <div className="App">
-      <SelectedImage />
+      <CRUD />
+      {/* <InputFormUseState /> */}
+      {/* <SelectedImage /> */}
       {/* <InputWithUseState /> */}
       {/* <SimpleUseState /> */}
       {/* <ClickEvent /> */}
