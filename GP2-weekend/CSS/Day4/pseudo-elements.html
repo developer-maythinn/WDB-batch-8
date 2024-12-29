@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        p::first-letter{
+            color: red;
+            font-size: 2rem;
+        }
+        p::first-line{
+            background-color: green;
+            color: white;
+        }
+        p::selection{
+            background-color: violet;
+            color:#fff;
+        }
+        h1::before{
+            content: "hello";
+        }
+        h1::after{
+            content: "!";
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eaque, accusantium quo sit ipsa odio molestias accusamus iure exercitationem dolor libero necessitatibus possimus vero porro est voluptas modi, architecto obcaecati?</p>
+</body>
+</html>
