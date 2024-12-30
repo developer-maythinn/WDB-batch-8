@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layer</title>
+    <style>
+      span {
+        width: 100px;
+        height: 100px;
+        background-color: hotpink;
+        display: inline-block;
+        position: absolute;
+        color: #fff;
+      }
+      span:nth-child(1){
+        z-index: 1;
+        top: 30px;
+        left: 30px;
+        background-color: rgb(28, 201, 74);
+      }
+      span:nth-child(2){
+        z-index: -1;
+        top: 60px;
+        left: 60px;
+        background-color: rgb(82, 33, 230);
+      }
+      span:nth-child(3){
+        z-index: 3;
+        top: 90px;
+        left: 90px;
+        background-color: rgb(238, 39, 52);
+      }
+    </style>
+  </head>
+  <body>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+  </body>
+</html>
