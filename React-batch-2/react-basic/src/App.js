@@ -12,12 +12,20 @@ import InputWithUseState from './components/Hooks/UseState/InputWithUseState';
 import SelectedImage from './components/Hooks/UseState/SelectedImage';
 import InputFormUseState from './components/Hooks/UseState/InputFormUseState';
 import CRUD from './components/Hooks/UseState/CRUD';
+import APIData from './components/Hooks/UseEffect/APIData';
+import SimpleUseEffect from './components/Hooks/UseEffect/SimpleUseEffect';
+import Clock from './components/Hooks/UseEffect/Clock';
+import ComponentA from './components/Hooks/PropsDrilling/ComponentA';
 
 function App() {
 
   return (
     <div className="App">
-      <CRUD />
+      <ComponentA />
+      {/* <Clock /> */}
+      {/* <SimpleUseEffect /> */}
+      {/* <APIData /> */}
+      {/* <CRUD /> */}
       {/* <InputFormUseState /> */}
       {/* <SelectedImage /> */}
       {/* <InputWithUseState /> */}
