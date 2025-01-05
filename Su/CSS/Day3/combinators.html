@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* div p{
+            background-color: rgb(255, 0, 55);
+        } */
+
+        /* div > p{
+            background-color: rgb(255, 0, 55);
+        } */
+
+        /* div + p{
+            background-color: rgb(255, 0, 55);
+        } */
+         
+        div ~ p{
+            background-color: rgb(255, 0, 55);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>P1 in div</p>
+        <p>P2 in div</p>
+        <section>
+            <p>P in section</p>
+        </section>
+    </div>
+    <p>P1 Outside</p>
+    <p>P2 Outside</p>
+</body>
+</html>
