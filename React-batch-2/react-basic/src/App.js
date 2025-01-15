@@ -22,58 +22,22 @@ import Projects from "./pages/Projects";
 import Hooks from "./pages/Hooks";
 import Nav from "./components/Nav";
 import HookDetail from "./pages/HookDetail";
+import HOC from "./components/HOC/HOC";
+import Test from "./components/HOC/Test";
+import ThemeContextProvider from "./context/ThemeContext";
 
 function App() {
   return (
     <div className="App">
-      <Nav></Nav>
-      <Routes>
-        <Route path="/projects" element={<Projects></Projects>}></Route>
-        <Route path="/hooks" element={<Hooks></Hooks>}></Route>
-        <Route path="/hooks/:id" element={<HookDetail />}></Route>
-      </Routes>
-
-     
-      
-
-      {/* <Clock /> */}
-      {/* <SimpleUseEffect /> */}
-      {/* <APIData /> */}
-      {/* <CRUD /> */}
-      {/* <InputFormUseState /> */}
-      {/* <SelectedImage /> */}
-      {/* <InputWithUseState /> */}
-      {/* <SimpleUseState /> */}
-      {/* <ClickEvent /> */}
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        {addTwo(2, 4)}
-        <br />
-        {addTwo(5, 10)}
-        <br />
-        {addThree(2, 4, 6)}
-        <Welcome />
-        <Message />
-       
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      {/* <Bag /> */}
-
-      {/* <Shop children="Hello" />
-       <Shop children={<h1>Book</h1>} />
-       <Shop>
-          <h2>Hello H2</h2>
-          <p>This is p</p>
-       </Shop> */}
-      {/* <Products />
-       <img src="/img1.webp" alt="img" /> */}
+      <ThemeContextProvider>
+        <Nav />
+        <Routes>
+          <Route path="/projects" element={<Projects></Projects>}></Route>
+          <Route path="/hooks" element={<Hooks></Hooks>}></Route>
+          <Route path="/hooks/:id" element={<HookDetail />}></Route>
+          <Route path="/hoc" element={<HOC />} />
+        </Routes>
+      </ThemeContextProvider>
     </div>
   );
 }

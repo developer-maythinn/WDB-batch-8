@@ -17,19 +17,26 @@ let original = {
   details: { pages: 100 },
 };
 
-// let shallowCopy = {...original}
+let shallowCopy = {...original}
 // shallowCopy.title = "May";
 // console.log(original)
-// console.log(shallowCopy)
+//c
 
-// let deepCopy = JSON.parse(JSON.stringify(original));
+let deepCopy = JSON.parse(JSON.stringify(original));
+// console.log( deepCopy, typeof deepCopy)
+
+shallowCopy.title = "MT";
+shallowCopy.details = 1;
+console.log("original", original)
+
+console.log("shallowCopy", shallowCopy)
 // deepCopy.details.pages = 150;
 
-let shallowCopy = {...original};
-shallowCopy.details.pages = 150;
-shallowCopy.title = "May";
+// let shallowCopy = {...original};
+// shallowCopy.details.pages = 150;
+// shallowCopy.title = "May";
 
-console.log(original.details.pages);
-// console.log(deepCopy.details.pages);
-console.log(shallowCopy.details.pages);
+// console.log(original.details.pages);
+// // console.log(deepCopy.details.pages);
+// console.log(shallowCopy.details.pages);
 

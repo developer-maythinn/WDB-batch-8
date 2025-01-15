@@ -1,8 +1,11 @@
 import React from 'react'
+import Books from '../components/BookShop/Books'
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <>
+      <Books />
+    </>
   )
 }
 
