@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position</title>
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         .card{
             width: 300px;
             height: 350px;
@@ -29,15 +32,36 @@
             text-align: center;
             color: #fff;
         }
+        .para{
+            background-color: pink;
+            height: 900px;
+        }
+        button{
+            position: fixed;
+            right: 10%;
+            bottom: 10%;
+        }
+        h3{
+            background-color: green;
+            padding: 20px;
+            color: #fff;
+            position: sticky;
+            top: 0;
+        }
     </style>
 </head>
 <body>
-    <div class="card">
+    <div class="card" id="card1">
         <img src="https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="img">
         <div class="content">
             <h1>Heading 1</h1>
             <p>This is p</p>
         </div>
     </div>
+   <h3>Heading 3</h3>
+   <a href="#card1">
+    <button>Go To Top</button>
+   </a>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam doloribus accusantium ex dolor ducimus veritatis sequi vero tenetur porro ratione. Officia cumque voluptatibus molestiae vitae libero optio voluptate tempora accusantium.</p>
 </body>
 </html>
