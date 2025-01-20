@@ -1,0 +1,67 @@
+$White: #fff;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --theme-color: orange;
+}
+body{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.card{
+  
+    width: 320px;
+    background-color: $White;
+    border-radius: 0.6rem;
+    box-shadow: 0 3px 10px;
+    overflow: hidden;
+    text-align: center;
+    header{
+        background-color: var(--theme-color);
+        color: $White;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .btn-container{
+        margin: 1rem;
+        button{
+            background-color: var(--theme-color);
+            color: $White;
+            border-radius: 4px;
+            border: 0;
+            padding: 5px 10px;
+            margin: 0 0.5rem;
+        }
+    }
+    .theme-btns{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 2rem 0 1rem;
+        .btn{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            
+        }
+        .btn1{
+            background-color: rgb(22, 222, 48);
+        }
+        .btn2{
+            background-color: rgb(22, 82, 222);
+        }
+        .btn3{
+            background-color: rgb(215, 22, 222);
+        }
+        .btn4{
+            background-color: rgb(222, 22, 55);
+        }
+    }
+}
