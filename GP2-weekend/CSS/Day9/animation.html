@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 0, 98);
+      }
+      .box:hover {
+        animation-name: multiColors;
+        animation-duration: 3s;
+        /* animation-delay: 2s; */
+      }
+      @keyframes myColors {
+        from {
+          background-color: yellow;
+        }
+        to {
+          background-color: green;
+        }
+      }
+
+      @keyframes multiColors {
+        0% {
+          background-color: red;
+        }
+        50% {
+          background-color: yellow;
+          transform: translateX(50px);
+        }
+        75% {
+          background-color: blue;
+          transform: scale(2);
+        }
+        100% {
+          background-color: blueviolet;
+          transform: translateY(100px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <h1 class="animate__animated animate__heartBeat animate__repeat-2">An animated element</h1>
+  </body>
+</html>
