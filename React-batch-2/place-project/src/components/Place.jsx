@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-function Place({ placeItem }) {
+function Place({ placeItem, isDetail }) {
   const { id, name, image, description, visited } = placeItem;
   const status = visited ? "Not visited" : "Visited";
   return (
@@ -15,18 +15,22 @@ function Place({ placeItem }) {
         <p className="text-sm">{description}</p>
         <h5 className="my-3 text-orange-500 font-bold">{status}</h5>
       </div>
-      <div className="flex justify-between mt-4">
+      <div
+        className="flex mt-4"
+        style={{ justifyContent: isDetail ? "center" : "space-between" }}
+      >
         <Button
           text="Mark as Visited"
           startIcon={<FontAwesomeIcon icon={faLocationDot} />}
         />
-        <Link to={`/${id}`}>
-          <Button
-            text="View Datail"
-            endIcon={<FontAwesomeIcon icon={faArrowRight} />}
-          />
-        </Link>
-       
+        {!isDetail && (
+          <Link to={`/${id}`}>
+            <Button
+              text="View Datail"
+              endIcon={<FontAwesomeIcon icon={faArrowRight} />}
+            />
+          </Link>
+        )}
       </div>
     </div>
   );
