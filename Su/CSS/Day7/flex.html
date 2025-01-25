@@ -22,9 +22,25 @@
       .container div {
         background-color: brown;
         width: 100px;
-        /* height: 100px; */
+        height: 100px;
         color: #fff;
         margin: 3px;
+      }
+      .container div:nth-child(1){
+        order: 2;
+        flex-grow: 2;
+        background-color: rgb(107, 11, 196);
+      }
+      .container div:nth-child(2){
+        order: 3;
+        /* align-self: flex-end; */
+        background-color: rgb(12, 240, 145);
+      }
+      .container div:nth-child(3){
+        order: 1;
+        flex-grow: 1;
+        /* align-self: flex-start; */
+        background-color: rgb(196, 11, 51);
       }
     </style>
   </head>

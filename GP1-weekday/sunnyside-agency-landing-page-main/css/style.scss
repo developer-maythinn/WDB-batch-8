@@ -11,7 +11,14 @@ $Very-dark-grayish-blue: hsl(213, 9%, 39%);
 $Dark-grayish-blue: hsl(232, 10%, 55%);
 $Grayish-blue: hsl(210, 4%, 67%);
 $White: hsl(0, 0%, 100%);
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", serif;
+  font-weight: 600;
+  font-style: normal;
+}
 .barlow-semibold {
   font-family: "Barlow", serif;
   font-weight: 600;
@@ -32,9 +39,58 @@ $White: hsl(0, 0%, 100%);
   font-style: normal;
   font-variation-settings: "SOFT" 0, "WONK" 0;
 }
-.hero-section{
-    min-height: 100vh;
-    background-image: url("../images/desktop/image-header.jpg");
-    background-position: center;
-    background-size: contain;
+
+.contact-btn {
+  font-size: 0.8rem;
+  color: $Very-dark-desaturated-blue;
+}
+
+.hero-section {
+  min-height: 100vh;
+  background-image: url("../images/desktop/image-header.jpg");
+  background-position: center;
+  background-size: contain;
+  h1 {
+    letter-spacing: 0.4rem;
+  }
+}
+.transform-container,
+.audience-container {
+  min-height: 70vh;
+  p {
+    color: $Dark-grayish-blue;
+  }
+  a {
+    letter-spacing: 0.5px;
+    color: $Very-dark-desaturated-blue;
+  }
+}
+.graphic-container {
+  min-height: 70vh;
+  background-image: url("../images/desktop/image-graphic-design.jpg");
+  background-size: contain;
+  background-position: top;
+  p {
+    color: $Dark-desaturated-cyan;
+  }
+}
+.photography-container {
+  min-height: 70vh;
+  background-image: url("../images/desktop/image-photography.jpg");
+  background-size: cover;
+  background-position: top;
+  p {
+    color: $Dark-blue;
+  }
+}
+.client-section {
+  min-height: 100vh;
+  .description {
+    color: $Very-dark-grayish-blue;
+  }
+  .detail {
+    p {
+      color: $Grayish-blue;
+    }
+  }
 }

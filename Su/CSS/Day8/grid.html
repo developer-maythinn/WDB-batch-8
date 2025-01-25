@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            max-width: 960px;
+            /* background-color: pink; */
+            margin: 50px auto;
+            display: grid;
+            /* grid-template-columns: 100px 200px 50px 100px; */
+            /* grid-template-columns: 1fr 3fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: 200px 100px 300px; */
+            /* grid-template-rows: 2fr 3fr 1fr; */
+            grid-auto-rows: 150px;
+            gap: 20px;
+        }
+        .container .item{
+            padding: 10px;
+        }
+        .container .item:nth-child(even){
+            background-color: #28e7d5;
+        }
+        .container .item:nth-child(odd){
+            background-color: #f9f871;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- .item*9{$ item} -->
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+</html>

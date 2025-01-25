@@ -19,13 +19,23 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav
+      class="navbar position-absolute top-0 w-100 navbar-expand-lg bg-transparent mt-2"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.svg" alt="logo" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -41,60 +51,191 @@
           class="collapse navbar-collapse flex-grow-0"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav align-items-center gap-3 me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link text-white" aria-current="page" href="#"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link text-white" href="#">Services</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" aria-disabled="true">Disabled</a>
+              <a class="nav-link text-white">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <button
+                  class="contact-btn fraunces-bold rounded-pill text-uppercase btn btn-light py-2"
+                >
+                  Contact
+                </button>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <section class="hero-section container-fluid">
-      <div class="text-center">
-        <h1>We are creatives</h1>
-        <img src="images/icon-arrow-down.svg" alt="img">
+      <div class="text-center pt-5">
+        <h1 class="my-5 pt-4 text-uppercase fraunces-bold text-white">
+          We are creatives
+        </h1>
+        <img src="images/icon-arrow-down.svg" alt="img" />
       </div>
-      
     </section>
-    <!-- About
-  Services
-  Projects
-  Contact
-
+    <section class="container-fluid">
+      <div class="row transform-container">
+        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+          <div class="w-75">
+            <h2 class="fraunces-extra-bold w-75">Transform your brand</h2>
+            <p class="my-3">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a
+              href="#"
+              class="text-uppercase text-decoration-none fraunces-extra-bold border-bottom border-5"
+              >Learn more</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-6 px-0">
+          <img
+            src="images/desktop/image-transform.jpg"
+            class="img-fluid d-none d-lg-block object-fit-cover"
+            alt=""
+          />
+          <img
+            src="images/mobile/image-transform.jpg"
+            class="img-fluid d-lg-none"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="row audience-container">
+        <div class="col-lg-6 bg-warning px-0">
+          <img
+            src="images/desktop/image-stand-out.jpg"
+            class="img-fluid d-none d-lg-block object-fit-cover"
+            alt=""
+          />
+          <img
+            src="images/mobile/image-stand-out.jpg"
+            class="img-fluid d-lg-none"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+          <div class="w-75">
+            <h2 class="fraunces-extra-bold w-75">
+              Stand out to the right audience
+            </h2>
+            <p class="my-3">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <a
+              href="#"
+              class="text-uppercase text-decoration-none fraunces-extra-bold border-bottom border-5"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-lg-6 graphic-container d-flex justify-content-center align-items-end"
+        >
+          <div class="w-75 text-center">
+            <h2 class="fraunces-extra-bold text-capitalize fs-5">
+              Graphic design
+            </h2>
+            <p class="pb-3">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-lg-6 photography-container d-flex justify-content-center align-items-end"
+        >
+          <div class="w-75 text-center">
+            <h2 class="fraunces-extra-bold text-capitalize fs-5">
+              Photography
+            </h2>
+            <p class="pb-3">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container client-section d-flex align-items-center">
+      <div>
+        <h3 class="text-center">Client testimonials</h3>
+        <div class="row">
+          <div class="col-lg-4 p-5">
+            <div class="text-center">
+              <img
+                src="images/image-emily.jpg"
+                class="img-fluid rounded-circle w-25 p-2"
+                alt="img"
+              />
+              <p class="description pt-3 pb-4">
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+              <div class="detail">
+                <h5 class="fraunces-extra-bold fs-6">Emily R.</h5>
+                <p class="fs-6"><small>Marketing Director</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 p-5">
+            <div class="text-center">
+              <img
+                src="images/image-thomas.jpg"
+                class="img-fluid rounded-circle w-25 p-2"
+                alt="img"
+              />
+              <p class="description pt-3 pb-4">
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+              <div class="detail">
+                <h5 class="fraunces-extra-bold fs-6">Emily R.</h5>
+                <p class="fs-6"><small>Marketing Director</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 p-5">
+            <div class="text-center">
+              <img
+                src="images/image-emily.jpg"
+                class="img-fluid rounded-circle w-25 p-2"
+                alt="img"
+              />
+              <p class="description pt-3 pb-4">
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+              <div class="detail">
+                <h5 class="fraunces-extra-bold fs-6">Emily R.</h5>
+                <p class="fs-6"><small>Marketing Director</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
   
-
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
   Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
   Thomas S.
   Chief Operating Officer
