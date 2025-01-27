@@ -36,8 +36,8 @@
 }
 
 .hero-section {
-  min-height: 100vh;
-  background-image: url("../images/desktop/image-header.jpg");
+  min-height: 80vh;
+  background-image: url("../images/mobile/image-header.jpg");
   background-position: center;
   background-size: contain;
 }
@@ -60,18 +60,18 @@
 }
 
 .graphic-container {
-  min-height: 70vh;
-  background-image: url("../images/desktop/image-graphic-design.jpg");
-  background-size: contain;
-  background-position: top;
+  min-height: 80vh;
+  background-image: url("../images/mobile/image-graphic-design.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .graphic-container p {
   color: hsl(167, 40%, 24%);
 }
 
 .photography-container {
-  min-height: 70vh;
-  background-image: url("../images/desktop/image-photography.jpg");
+  min-height: 80vh;
+  background-image: url("../images/mobile/image-photography.jpg");
   background-size: cover;
   background-position: top;
 }
@@ -87,4 +87,21 @@
 }
 .client-section .detail p {
   color: hsl(210, 4%, 67%);
+}
+
+@media (min-width: 992px) {
+  .hero-section {
+    min-height: 100vh;
+    background-image: url("../images/desktop/image-header.jpg");
+  }
+  .graphic-container,
+  .photography-container {
+    min-height: 70vh;
+  }
+  .graphic-container {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+  }
+  .photography-container {
+    background-image: url("../images/desktop/image-photography.jpg");
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+@import "./variables";
+
+.main-container {
+  h1 {
+    background-color: $main-color;
+    color: $text-color;
+  }
+  p {
+    color: $main-color;
+  }
+  .box {
+    h2 {
+      background-color: $main-color;
+    }
+  }
+}
