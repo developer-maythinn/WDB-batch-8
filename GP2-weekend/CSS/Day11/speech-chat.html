@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: rgb(255, 0, 119);
+        color: #fff;
+        width: 300px;
+        height: 150px;
+        margin: 50px auto;
+        padding: 1rem;
+        border-radius: 10%;
+        position: relative;
+      }
+      .box::before {
+        content: "";
+        position: absolute;
+        bottom: -2.5rem;
+        left: 2rem;
+        border: 20px solid transparent;
+        border-top-color: rgb(255, 0, 119);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur in
+      libero vitae placeat reiciendis natus, voluptatibus, sequi debitis dolores
+      tempore doloremque earum explicabo aliquid consectetur quam voluptate
+      saepe. Accusamus, animi.
+    </div>
+  </body>
+</html>

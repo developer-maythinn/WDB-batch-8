@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+.inter-bold {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lexend-deca-normal {
+  font-family: "Lexend Deca", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-size: 15px;
+  background-color: hsl(233, 47%, 7%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 60vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: fit-content;
+  border-radius: 8px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+    max-width: 100vw;
+    margin: 3rem 1rem;
+  }
+}
+.card .left-side {
+  padding: 3rem;
+  background-color: hsl(244, 38%, 16%);
+  color: hsl(0, 0%, 100%);
+}
+.card .left-side h2 span {
+  color: hsl(277, 64%, 61%);
+}
+.card .left-side p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 1.5rem 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.card .left-side .result-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  .card .left-side .result-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+.card .left-side .result-container .companies h4, .card .left-side .result-container .template h4, .card .left-side .result-container .queries h4 {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.card .left-side .result-container .companies h6, .card .left-side .result-container .template h6, .card .left-side .result-container .queries h6 {
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+  letter-spacing: 1px;
+  margin-top: 0.4rem;
+  font-size: 0.6rem;
+}
+.card .left-side .result-container .queries h4 {
+  text-transform: uppercase;
+}
+.card .right-side {
+  background-image: url("../images/image-header-desktop.jpg");
+  background-size: contain;
+  background-color: hsl(277, 64%, 61%);
+  background-blend-mode: multiply;
+}
+@media (max-width: 768px) {
+  .card .right-side {
+    background-image: url("../images/image-header-mobile.jpg");
+    order: -1;
+    height: 250px;
+  }
+}/*# sourceMappingURL=style.css.map */
