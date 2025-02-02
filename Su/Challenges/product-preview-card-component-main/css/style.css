@@ -42,11 +42,25 @@ body {
   border-radius: 0.5rem;
   overflow: hidden;
 }
-.card .main-img {
+.card .desktop-img,
+.card .mobile-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 768px) {
+  .card .desktop-img {
+    display: none;
+  }
+}
+.card .mobile-img {
+  display: none;
+}
+@media (max-width: 768px) {
+  .card .mobile-img {
+    display: block;
+  }
 }
 .card .right-side {
   padding: 1.5rem;
@@ -101,5 +115,6 @@ body {
 @media (max-width: 768px) {
   .card {
     grid-template-columns: 1fr;
+    margin: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
