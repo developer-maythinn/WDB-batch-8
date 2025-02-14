@@ -2,15 +2,16 @@ import React from "react";
 import Button from "../components/Button";
 import Title from "../components/Title";
 import Places from "../components/Places";
+import RandomPlace from "../components/RandomPlace";
 
 function PlacesList() {
   return (
     <div className="container mx-auto">
       <Title customClass="mt-10" title="Historical Places" />
 
-      <Button text="Suggest random places"></Button>
+      <RandomPlace />
 
-      <Title   title="All Historical Places" />
+      <Title title="All Historical Places" />
 
       <Places />
     </div>
