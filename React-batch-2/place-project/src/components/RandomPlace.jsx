@@ -7,16 +7,26 @@ import { markAsVisited, unmarkAsVisited } from "../redux/placesSlice";
 function RandomPlace() {
   const [randomPlaceId, setRandomPlaceId] = useState(null);
   const [prevValue, setPrevValue] = useState(null);
+
   const places = useSelector((state) => state.places.places);
 
   const getRandomPlace = () => {
     const randomIndex = Math.floor(Math.random() * places.length);
     const randomPlaceItem = places[randomIndex];
-    setRandomPlaceId(randomPlaceItem.id);
+    // setRandomPlaceId(randomPlaceItem.id);
+
+    if (randomPlaceItem !== prevValue) {
+      setPrevValue(randomPlaceItem);
+      setRandomPlaceId(randomPlaceItem.id);
+    } else {
+      getRandomPlace(); // Retry if the same value appears
+    }
   };
 
-  const randomPlace = randomPlaceId ? places.find(place => place.id === randomPlaceId) : null;
-  
+  const randomPlace = randomPlaceId
+    ? places.find((place) => place.id === randomPlaceId)
+    : null;
+  console.log(randomPlace);
   const dispatch = useDispatch();
 
   const toggleVisitedStatus = (id, visited) => {
