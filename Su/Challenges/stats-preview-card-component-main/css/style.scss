@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+$Very-dark-blue: hsl(233, 47%, 7%);
+$Dark-desaturated-blue: hsl(244, 38%, 16%);
+$Soft-violet: hsl(277, 64%, 61%);
+
+$White: hsl(0, 0%, 100%);
+$Slightly-main: hsla(0, 0%, 100%, 0.75);
+$Slightly-stat: hsla(0, 0%, 100%, 0.6);
+
+
+.lexend-deca {
+  font-family: "Lexend Deca", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $Very-dark-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+  .card {
+    max-width: 61%;
+    background-color: $Dark-desaturated-blue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+    overflow: hidden;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+    }
+    .content-container {
+      padding: 2.5rem;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      @media (max-width: 768px) {
+        order: 2;
+        text-align: center;
+        padding: 1.5rem;
+      }
+      h2 {
+        color: $White;
+        font-weight: 700;
+        font-size: 1.8rem;
+        b {
+          color: $Soft-violet;
+          font-weight: 700;
+        }
+      }
+      .description {
+        color: $Slightly-main;
+        line-height: 1.6;
+        margin: 1rem 0;
+        font-size: 12px;
+      }
+      .detail-container {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        gap: 2.5rem;
+        @media (max-width: 768px) {
+          display: block;
+          text-align: center;
+          margin: auto;
+        }
+        .detail {
+          @media (max-width: 768px) {
+            margin: 1.5rem 0;
+          }
+          h5 {
+            color: $White;
+            font-weight: 700;
+            font-size: 1.2rem;
+          }
+          p {
+            font-size: 10px;
+            letter-spacing: 1px;
+            color: $Slightly-stat;
+            font-weight: 300;
+          }
+          &:nth-child(1) {
+            h5 {
+              text-transform: lowercase;
+            }
+          }
+        }
+      }
+    }
+    .img-container {
+      background-color: hsl(277deg 90.52% 20.98%);
+      @media (max-width: 768px) {
+        order: 1;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: opacity(0.5);
+      }
+      .desktop-img {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      .mobile-img {
+        display: none;
+        @media (max-width: 768px) {
+          display: block;
+        }
+      }
+    }
+  }
+}

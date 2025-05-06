@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero-section {
+  background-color: hsl(256, 26%, 20%);
+  color: hsl(0, 0%, 98%);
+  min-height: 80vh;
+}
+.hero-section .hero-content {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .hero-section .hero-content::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    top: 0;
+    background-color: hsl(0, 0%, 98%);
+  }
+}
+.hero-section .intro-img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .hero-section .intro-img {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+  }
+}
+.hero-section .hero-left-pattern {
+  bottom: -18rem;
+  width: 150px;
+}/*# sourceMappingURL=styles.css.map */
