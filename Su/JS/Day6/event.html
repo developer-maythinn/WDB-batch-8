@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <button onclick="alert('HELLO')">Click</button> -->
+    <h2 id="h2"></h2>
+    <!-- <input type="text" id="input" oninput="changeLowerCase()" /> -->
+    <input type="text" id="input" onchange="changeLowerCase()" />
+
+    <script>
+      function changeLowerCase() {
+        let input = document.getElementById("input");
+        input.value = input.value.toLowerCase();
+        console.log(input.value)
+
+        let h2 = document.getElementById("h2");
+        h2.innerHTML = input.value;
+      }
+    </script>
+  </body>
+</html>
